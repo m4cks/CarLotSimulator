@@ -23,8 +23,14 @@ namespace CarLotSimulator
 
             //SETTING PROPERTIES 3 DIFFERENT WAYS FOR CARS
             Car car1 = new Car() { Year = 2010, Make = "Honda", Model = "Civic", EngineNoise = "*vrum*", HonkNoise = "Honk", IsDriveable = true };
+            Console.WriteLine($"Car 1 created! Number of cars in the lot: {CarLot.numberOfCars}");
+
             Car car2 = new Car(1990, "Toyota", "Camota", "*vrOOm*", "HREnK", true);
+            Console.WriteLine($"Car 2 created! Number of cars in the lot: {CarLot.numberOfCars}");
+
             Car car3 = new Car();
+            Console.WriteLine($"Car 3 created! Number of cars in the lot: {CarLot.numberOfCars}");
+
             car3.Year = 1900;
             car3.Make = "Ferrari";
             car3.Model = "GT3";
@@ -36,7 +42,7 @@ namespace CarLotSimulator
             carLot.CarList.Add(car1);
             carLot.CarList.Add(car2);
             carLot.CarList.Add(car3);
-
+           
             Console.WriteLine("Engine Noises:");
             car1.MakeEngineNoise();
             car2.MakeEngineNoise();

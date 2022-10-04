@@ -10,7 +10,7 @@ namespace CarLotSimulator
         //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
         public Car()
         {
-
+            CarLot.numberOfCars++;
         }
 
         public Car(int Year, string Make, string Model, string EngineNoise, string HonkNoise, bool IsDriveable)
@@ -21,6 +21,7 @@ namespace CarLotSimulator
             this.EngineNoise = EngineNoise;
             this.HonkNoise = HonkNoise;
             this.IsDriveable = IsDriveable;
+            CarLot.numberOfCars++;
         }
 
         public int Year;

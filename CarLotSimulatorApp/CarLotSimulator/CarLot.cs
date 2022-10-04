@@ -7,7 +7,8 @@ namespace CarLotSimulator
     internal class CarLot
     {
         public List<Car> CarList;
-
+        public static int numberOfCars;
+        
         public CarLot()
         {
             CarList = new List<Car>();
